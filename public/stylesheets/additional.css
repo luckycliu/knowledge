@@ -1,0 +1,150 @@
+a {
+	font-weight: normal;
+}
+
+#main-menu {
+	margin: 0 auto;
+	right: 6px;
+	width: 975px;
+}
+
+html>body #content {
+	min-height: 0px;
+	padding-bottom: 40px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #F6F7F8;
+}
+
+fieldset {
+	margin-left: 178px;
+	width: 592px;
+}
+
+a.btn_nice {
+	background: url("/public/images/btn_nice.png") repeat-x scroll left
+		-20px #3790EC;
+	border: medium none;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px 0 #3790EC;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 2px 4px;
+	margin-top: 5px;
+}
+
+ul.vertical {
+	list-style: none;
+	padding-left: 10px;
+}
+
+ul.vertical li {
+	display: inline-block;
+	list-style: none;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+img.photo {
+	border: 1px solid #AAAAAA;
+	box-shadow: 1px 1px 6px #CCCCCC;
+}
+
+.left {
+	float: left !important;
+}
+
+div.user_list {
+	margin-left: 20px;
+}
+
+div.user {
+	float: left;
+	height: 80px;
+	overflow: hidden;
+	width: 800px;
+	margin-right: 5px;
+}
+
+div.user div.info {
+	margin-left: 5px;
+}
+
+div.user div.info p {
+	padding: 0;
+	margin: 0;
+}
+
+div.top-question-list {
+	margin-left: 20px;
+}
+
+div.question-item {
+	
+}
+
+a.user-name {
+	color: #336699;
+	font-weight: normal;
+}
+
+span.response-box {
+	padding: 2px 5px;
+	background-color: #EEEEEE;
+	border: 1px solid #AAAAAA;
+	box-shadow: 1px 1px 6px #CCCCCC;
+	background-color: #EEEEEE;
+}
+
+div.question-item-a {
+	border-bottom: 1px dotted #999999;
+}
+
+li.votes {
+	color: #555555;
+}
+
+li.answers {
+	color: #9A4444;
+}
+
+li.views {
+	color: #999999;
+}
+
+.count-item {
+	height: 38px;
+	margin: 0 3px 0 0;
+	padding: 0px 5px;
+	text-align: center;
+}
+
+.gray-box {
+	background-color: #F2F2F2;
+	box-shadow: 0 1px 6px #999999;
+	border-radius: 4px 4px 4px 4px;
+	margin: 0 0 20px;
+	padding: 10px;
+}
+
+.answer-content {
+	font-size: 12px;
+	border-top: 1px dotted #999999;
+	padding-top: 5px;
+	margin-top: 5px;
+	width: 800px;
+}
+
+.answer-item {
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.responsers {
+	font-size: 11px;
+}

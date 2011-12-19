@@ -1,0 +1,11 @@
+<form method="post" action="@{authenticate()}">
+	`t v_msg "form"`
+	`t authenticityToken 
+	Email:
+	<input type="email" name="username" />`t v_msg "username"`<br/>
+	Password:
+	<input name="password" type="password" />`t v_msg "password"`<br/>
+	Remember me
+	<input type="checkbox" name="remember" id="remember" value="true"/><br/>
+	<input type="submit" value="login" /><br/>
+</form>

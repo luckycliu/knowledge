@@ -1,0 +1,6 @@
+package controllers;
+
+public enum SubMenu {
+	PUBLIC_QUESTIONS,
+	MY_CONFIDENTIAL_QUESTIONS, CONFIDENTIAL_QUESTIONS_FOR_ME
+}

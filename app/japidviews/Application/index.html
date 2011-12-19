@@ -1,0 +1,15 @@
+`import models.users.*;
+`import models.knowledge.*;
+`extends noneSideBar_layout
+`def content
+
+<h2>Top Public Knowledges</h2>
+<div class="top-question-list">
+	`each KFragment.getTopPublicKFragment(user(), 7) | KFragment item
+		`t kfragment_item item
+	`
+</div>
+<div style="clear:both;"></div>
+
+
+`

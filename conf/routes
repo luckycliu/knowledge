@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+
+GET		/signup									Signup.index
+POST	/signup                                 Signup.createUser
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+GET		/demo									Demo.index
+
+# Import Secure routes
+*       /                                       module:rsecure
+*       /                                       module:press
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
+

@@ -1,0 +1,23 @@
+`import static press.Plugin.*;
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/public/images/favicon.png" type="image/png" rel="shortcut icon" />
+$addJS("libs/jquery-1.5.2.min.js", false)
+$addJS("business/common.js", true)
+`get js`
+$compressedJSTag()
+$addCSS("main.css", true)
+$addCSS("theme.css", true)
+$addCSS("additional.css", true)
+$addCSS("font.css", true)
+`get css`
+$compressedCSSTag()
+`get inlinejs`
+<title>`get title`</title>
+</head>
+`get body`
+
+`doLayout`
+</html>

@@ -1,0 +1,17 @@
+`import models.users.*;
+`import models.knowledge.*;
+`args KFragment item
+
+<div class="user">
+	<ul class="vertical">
+		<li><a href="#"><img class="photo" src="$item.author.getPhotoUrl()"/></a></li>
+		<li style="widht: 180px;">
+			<a href="#" style="display:block;" class="user-name">$item.author.firstName $item.author.lastName</a>
+			<p>Based in $item.author.state</p>
+		</li>
+		<li>		
+			<div style="font-size:14px;width: 600px;">I am learning <span style="color:#E06D1B;">$item.title</span></div>
+			<div style="font-size:9px;color:#909090;width: 600px;">from <a href="http://$item.url" target="_blank">$item.url</a></div>
+		</li>
+	</ul>
+</div>

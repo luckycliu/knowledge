@@ -1,0 +1,21 @@
+`import rbase.utils.StringUtils;
+`import play.mvc.Scope.Flash;
+<div class="message">
+`String notice = Flash.current().get("notice");
+`if(!StringUtils.isEmpty(notice)){
+<div class="notice">${notice}</div>
+`}
+`if(!validation.errors().isEmpty())
+<div class="errors">
+	<ul>
+	`each errors| Error e
+		`if(e.getKey().equals("base")){
+			<li class="base">$e.message()</li>
+		`} else {
+			<li>$e.message()</li>
+		`}
+	`
+	</ul>
+</div>
+`
+</div>

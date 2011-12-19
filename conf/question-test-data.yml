@@ -1,0 +1,218 @@
+# Test data
+
+# Customers.....
+users.User(user1):
+    email:  ryvius.note@gmail.com
+    password: 111111
+    firstName: Charles
+    lastName: Pittman 
+    state: AK 
+       
+users.User(user2):
+    email:  syvius@gmail.com
+    password: 111111
+    firstName: Elliot
+    lastName: Nicola
+    state: CA    
+
+# Business Users....
+users.User(buser1):
+    email: ryvius.lee@gmail.com
+    password: 111111
+    firstName: Mike
+    lastName: Bowling
+    state: AK             
+    brole.goodAt:
+      - Auto Insurance
+    brole.agentName: Protect Umbrella
+
+users.User(buser2):
+    email: buser2@gmail.com
+    password: 111111
+    firstName: Ben
+    lastName: Charny
+    state: AK             
+    brole.goodAt:
+      - Home Insurance
+    brole.agentName: Protect Umbrella            
+
+users.User(buser3):
+    email: buser3@gmail.com
+    password: 111111
+    firstName: Paul
+    lastName: Moler
+    state: CA             
+    brole.goodAt:
+       - Life Insurance
+    brole.agentName: Veritude LLC
+           
+users.User(buser4):
+    email: buser4@gmail.com
+    password: 111111
+    firstName: Dave
+    lastName: Koka
+    state: CA            
+    brole.goodAt:
+        - Business Property Insurance
+    brole.agentName: Hillyard, Inc. 
+                  
+users.User(buser5):
+    email: buser5@gmail.com
+    password: 111111
+    firstName: Kevin
+    lastName: Corry
+    state: CA            
+    brole.goodAt:
+       - Business Auto Insurance
+    brole.agentName: Veritude LLC    
+       
+users.User(buser6):
+    email: buser6@gmail.com
+    password: 111111
+    firstName: William
+    lastName: Willoughby
+    state: CA            
+    brole.goodAt:
+       - Business Liability Insurance
+    brole.agentName: Veritude LLC    
+       
+users.User(buser7):
+    email: buser7@gmail.com
+    password: 111111
+    firstName: Stephen
+    lastName: Triola
+    state: CA            
+    brole.goodAt:
+       - Business Auto Insurance
+    brole.agentName: Veritude LLC       
+       
+users.User(buser8):
+    email: buser8@gmail.com
+    password: 111111
+    firstName: Stanley
+    lastName: Burruss
+    state: CA            
+    brole.goodAt:
+       - Workers Compensation Insurance
+    brole.agentName: Veritude LLC       
+       
+users.User(buser9):
+    email: buser9@gmail.com
+    password: 111111
+    firstName: R. Bruce
+    lastName: Coleman
+    state: CA            
+    brole.goodAt:
+       - Business Auto Insurance
+    brole.agentName: Veritude LLC       
+       
+users.User(buser10):
+    email: buser10@gmail.com
+    password: 111111
+    firstName: James
+    lastName: Quinby
+    state: CA            
+    brole.goodAt:
+       - Auto Insurance
+    brole.agentName: Veritude LLC       
+
+# Questions
+models.qa.Question(q1):
+  title: titile
+  content: content of public question1
+  type: PUBLIC
+  author: user1
+  created: 2011-06-14
+  tags:
+    - Auto Insurance
+
+models.qa.Question(q2):
+  title: titile
+  content: content of public question2
+  type: PUBLIC
+  author: user1
+  created: 2011-07-14
+  tags:
+    - Home Insurance
+
+models.qa.Question(q3):
+  content: content of public question3
+  type: PUBLIC
+  author: user2
+  created: 2011-04-14
+  tags:
+    - Life Insurance
+    
+models.qa.Question(q4):
+  content: content of public question4
+  type: PUBLIC
+  author: user2
+  created: 2011-06-14
+  tags:
+    - Business Property Insurance
+
+models.qa.Question(q5):
+  content: content of public question5
+  type: PUBLIC
+  author: user2
+  created: 2011-11-23
+  tags:
+    - Business Liability Insurance
+
+models.qa.Question(q6):
+  content: content of public question6
+  type: PUBLIC
+  author: user1
+  created: 2011-11-24
+  tags:
+    - Business Auto Insurance
+    
+models.qa.Question(q7):
+  content: content of public question7
+  type: PUBLIC
+  author: user2
+  created: 2011-06-24
+  tags:
+    - Workers Compensation Insurance
+
+models.qa.Question(q8):
+  content: content of public question8
+  type: PUBLIC
+  author: user2
+  created: 2011-11-24
+  tags:
+    - Auto Insurance
+
+models.qa.Question(q9):
+  content: content of public question9
+  type: PUBLIC
+  author: user1
+  created: 2011-11-24
+  tags:
+    - Home Insurance
+    
+models.qa.Question(cq1):
+  content: content of confidentail question1
+  type: CONFIDENTIAL
+  author: user1
+  created: 2011-11-15
+  tags:
+    - Life Insurance
+     
+models.qa.Question(cq2):
+  content: content of confidentail question2
+  type: CONFIDENTIAL
+  author: user2
+  created: 2011-11-25
+  tags:
+    - Business Property Insurance
+    
+models.qa.Question(cq3):
+  content: content of confidentail question3
+  type: CONFIDENTIAL
+  author: user2
+  created: 2011-11-24
+  tags:
+    - Business Auto Insurance
+    
+#QuestionAnswer

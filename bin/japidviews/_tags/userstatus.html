@@ -1,0 +1,14 @@
+<div id="account">
+<ul>
+`if(user() == null){
+	<li><a class="login" href="@{rsecure.Secure.login()}">Log in</a></li>
+`}else{
+	<li><a href="@{rsecure.Secure.logout()}">Log out</a></li>
+`}
+</ul>
+</div>
+`if(user() != null){
+<div id="loggedas">
+	welcome: $user().fullName()
+</div>
+`}

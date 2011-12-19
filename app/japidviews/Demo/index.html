@@ -1,0 +1,41 @@
+`import models.users.*;
+`extends noneSideBar_layout 
+`def content
+<h3>Demo Management</h3>
+
+<div>
+	<ul>
+		<li><a href="@{Demo.reloadData()}">Reload Default Data</a> - will reset all data</li>
+	</ul>
+</div>
+
+<div>
+	<h4>Users</h4>
+	<table class="list">
+		<thead>
+		<tr>
+			<th>user id</th>
+			<th>email</th>
+			<th>first name</th>
+			<th>last name</th>
+			<th>state</th>
+			<th>actions</th>
+		</tr>
+		</thead>
+		<tbody>
+	`List<User> users = User.all().order("_id").asList();
+	`for(User user : users){
+		<tr>
+			<td>$user.getId()</td>
+			<td>$user.email</td>
+			<td>$user.firstName</td>
+			<td>$user.lastName</td>
+			<td>$user.state</td>
+			<td><a href="@{Demo.loginAs(user.getId())}" >Log in as this user</a></td>
+		</tr>
+	`}
+		</tbody>
+	</table>
+</div>
+
+`

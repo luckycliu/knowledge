@@ -1,0 +1,6 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+validation.passwordAgainUnmatch=Password doesn't match
+rbase.validator.Unique.violated=It has been taken, please use another one
+validation.usernameUnmatchPassword=Email or password incorrect

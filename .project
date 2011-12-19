@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>kbase</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.playframework.playclipse.playNature</nature>
+	</natures>
+	<linkedResources><link><name>ruibase</name><type>2</type><location>c:/converq/app-site/modeuls/coverq/../ruibase/app</location></link>
+<link><name>conf/ruibase</name><type>2</type><location>c:/converq/app-site/modeuls/coverq/../ruibase/conf</location></link>
+<link><name>rsolr</name><type>2</type><location>c:/converq/app-site/modeuls/coverq/../rsolr/app</location></link>
+<link><name>conf/rsolr</name><type>2</type><location>c:/converq/app-site/modeuls/coverq/../rsolr/conf</location></link>
+<link><name>japid-0.9.2</name><type>2</type><location>C:/knowledge-management/app-site/kbase/modules/japid-0.9.2/app</location></link>
+<link><name>conf/japid-0.9.2</name><type>2</type><location>C:/knowledge-management/app-site/kbase/modules/japid-0.9.2/conf</location></link>
+<link><name>press-1.0.24</name><type>2</type><location>C:/knowledge-management/app-site/kbase/modules/press-1.0.24/app</location></link>
+<link><name>conf/press-1.0.24</name><type>2</type><location>C:/knowledge-management/app-site/kbase/modules/press-1.0.24/conf</location></link>
+<link><name>rsecure</name><type>2</type><location>c:/converq/app-site/modeuls/coverq/../rsecure/app</location></link>
+<link><name>conf/rsecure</name><type>2</type><location>c:/converq/app-site/modeuls/coverq/../rsecure/conf</location></link>
+<link><name>morphia-1.2.4a</name><type>2</type><location>C:/knowledge-management/app-site/kbase/modules/morphia-1.2.4a/app</location></link>
+<link><name>conf/morphia-1.2.4a</name><type>2</type><location>C:/knowledge-management/app-site/kbase/modules/morphia-1.2.4a/conf</location></link>
+</linkedResources>
+</projectDescription>

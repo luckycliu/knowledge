@@ -1,0 +1,228 @@
+# Test data
+
+# Customers.....
+users.User(user1):
+    email:  ryvius.note@gmail.com
+    password: 111111
+    firstName: Charles
+    lastName: Pittman 
+    state: MA 
+       
+users.User(user2):
+    email:  syvius@gmail.com
+    password: 111111
+    firstName: Elliot
+    lastName: Nicola
+    state: CA    
+
+# Business Users....
+users.User(buser1):
+    email: ryvius.lee@gmail.com
+    password: 111111
+    firstName: Mike
+    lastName: Bowling
+    state: MA             
+    brole.goodAt:
+      - Auto Insurance
+    brole.agentName: Protect Umbrella
+
+users.User(buser2):
+    email: buser2@gmail.com
+    password: 111111
+    firstName: Ben
+    lastName: Charny
+    state: MA             
+    brole.goodAt:
+      - Home Insurance
+    brole.agentName: Protect Umbrella            
+
+users.User(buser3):
+    email: buser3@gmail.com
+    password: 111111
+    firstName: Paul
+    lastName: Moler
+    state: CA             
+    brole.goodAt:
+       - Life Insurance
+    brole.agentName: Veritude LLC
+           
+users.User(buser4):
+    email: buser4@gmail.com
+    password: 111111
+    firstName: Dave
+    lastName: Koka
+    state: CA            
+    brole.goodAt:
+        - Business Property Insurance
+    brole.agentName: Hillyard, Inc. 
+                  
+users.User(buser5):
+    email: buser5@gmail.com
+    password: 111111
+    firstName: Kevin
+    lastName: Corry
+    state: CA            
+    brole.goodAt:
+       - Business Auto Insurance
+    brole.agentName: Veritude LLC    
+       
+users.User(buser6):
+    email: buser6@gmail.com
+    password: 111111
+    firstName: William
+    lastName: Willoughby
+    state: MA            
+    brole.goodAt:
+       - Business Liability Insurance
+    brole.agentName: Veritude LLC    
+       
+users.User(buser7):
+    email: buser7@gmail.com
+    password: 111111
+    firstName: Stephen
+    lastName: Triola
+    state: MA            
+    brole.goodAt:
+       - Business Auto Insurance
+    brole.agentName: Veritude LLC       
+       
+users.User(buser8):
+    email: buser8@gmail.com
+    password: 111111
+    firstName: Stanley
+    lastName: Burruss
+    state: CA            
+    brole.goodAt:
+       - Workers Compensation Insurance
+    brole.agentName: Veritude LLC       
+       
+users.User(buser9):
+    email: buser9@gmail.com
+    password: 111111
+    firstName: R. Bruce
+    lastName: Coleman
+    state: CA            
+    brole.goodAt:
+       - Business Auto Insurance
+    brole.agentName: Veritude LLC       
+       
+users.User(buser10):
+    email: buser10@gmail.com
+    password: 111111
+    firstName: James
+    lastName: Quinby
+    state: CA            
+    brole.goodAt:
+       - General Business Insurance
+    brole.agentName: Veritude LLC       
+
+# Questions
+models.qa.Question(q1):
+  title: Where can I find an agent for commercial auto insurance and other lines?
+  content: My service company is growing rapidly, and we are in the process of looking to purchase some commercial/business insurance. I'm just wondering where you can find an agent to talk to?
+  type: PUBLIC
+  author: user1
+  created: 2011-06-14
+  tags:
+    - General Business Insurance
+
+models.qa.Question(q2):
+  title: What is the difference between my personal auto insurance and having business auto insurance?
+  content: I'm thinking about purchasing a car for my employees to use for business purposes. I'm wondering if I should purchase business insurance for it, or just a standard personal auto policy.
+  type: PUBLIC
+  author: user1
+  created: 2011-07-14
+  tags:
+    - Business Auto Insurance
+
+models.qa.Question(q3):
+  title: What does commercial property insurance cover?
+  content: I wanted to know how it covers my business before I decide to purchase it for my business.
+  type: PUBLIC
+  author: user2
+  created: 2011-04-14
+  tags:
+    - Business Property Insurance
+    
+models.qa.Question(q4):
+  title: What factors determine the cost of my business liability insurance?
+  content: I pay much more than my friend who owns another business. I'm wondering how I'm being charged a different rate?
+  type: PUBLIC
+  author: user2
+  created: 2011-06-14
+  tags:
+    - Business Liability Insurance
+
+models.qa.Question(q5):
+  title: What is workers' comp insurance? 
+  content: I just wanted to get an idea of what workers' comp is, and what coverage it gives my business.
+  type: PUBLIC
+  author: user2
+  created: 2011-11-23
+  tags:
+    - Workers Compensation Insurance
+
+models.qa.Question(q6):
+  title: How important is it to choose an insurance company with a high financial rating?
+  content: I often see insurance companies advertising their "A+" ratings. Is it really that important?
+  type: PUBLIC
+  author: user1
+  created: 2011-11-24
+  tags:
+    - General Insurance
+    
+models.qa.Question(q7):
+  title: How do I get the cheapest auto insurance?
+  content: I just bought a car and I'm not looking forward to spending thousands of extra dollars on insurance. Since it is mandatory for me to get the auto insurance, I just want to find the cheapest one I can get.
+  type: PUBLIC
+  author: user2
+  created: 2011-06-24
+  tags:
+    - Auto Insurance
+
+models.qa.Question(q8):
+  title: Does my home insurance follow me if I'm being sued for something unrelated to my house?
+  content: A couple of my friends are involved in a nasty lawsuit when a fight broke out in their apartment. They don't have any insurance except for their families home insurance policies. Will their family policies cover their lawsuit costs?
+  type: PUBLIC
+  author: user2
+  created: 2011-11-24
+  tags:
+    - Home Insurance
+
+models.qa.Question(q9):
+  title: How do you know exactly how much life insurance you need?
+  content: I've recently started thinking about getting a life insurance policy and was hoping to get an idea of how much I should be insured for.
+  type: PUBLIC
+  author: user1
+  created: 2011-11-24
+  tags:
+    - Life Insurance
+    
+models.qa.Question(cq1):
+  title: How do I get the cheapest auto insurance?
+  content: I just bought a car and I'm not looking forward to spending thousands of extra dollars on insurance. Since it is mandatory for me to get the auto insurance, I just want to find the cheapest one I can get.
+  type: CONFIDENTIAL
+  author: user1
+  created: 2011-11-15
+  tags:
+    - Auto Insurance
+     
+models.qa.Question(cq2):
+  title: Does my home insurance follow me if I'm being sued for something unrelated to my house?
+  content: A couple of my friends are involved in a nasty lawsuit when a fight broke out in their apartment. They don't have any insurance except for their families home insurance policies. Will their family policies cover their lawsuit costs?
+  type: CONFIDENTIAL
+  author: user2
+  created: 2011-11-25
+  tags:
+    - Home Insurance
+    
+models.qa.Question(cq3):
+  title: What factors determine the cost of my business liability insurance?
+  content: I pay much more than my friend who owns another business. I'm wondering how I'm being charged a different rate?
+  type: CONFIDENTIAL
+  author: user2
+  created: 2011-06-14
+  tags:
+    - Business Liability Insurance
+    
+#QuestionAnswer

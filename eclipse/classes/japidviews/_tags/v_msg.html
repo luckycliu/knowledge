@@ -1,0 +1,10 @@
+`args String field 
+`if(validation.hasError(field)){
+<div class="v_errors">
+	<ul>
+	`for(Error e: validation.errors(field)){
+		<li>$e.message()</li>
+	`}
+	</ul>
+</div>
+`}

@@ -1,0 +1,18 @@
+require:
+    - play
+    - play -> morphia 1.2.4a
+    - play -> japid 0.9.2
+    - play -> press 1.0.24
+    - play -> ruibase 0.1
+    - play -> rsecure 0.1
+    - play -> rsolr 0.1
+    
+    
+repositories:
+     - My modules:
+         type:       local
+         artifact:   ${application.path}/../[module]
+         contains:
+             - rsolr
+             - ruibase
+             - rsecure    

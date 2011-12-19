@@ -1,0 +1,37 @@
+`extends base_layout
+`set title:"Cojeel - Demo"
+`def main_content
+`
+`set body
+<body>
+	<div id="wrapper">
+		<div id="wrapper2">
+			<div id="top-menu">
+				`t userstatus
+				`t topMenu
+			</div>
+			<div id="header">
+				`t searchBar
+
+				<h1><a style="text-decoration: none;" href="@{Application.index()}">Cojeel - Demo</a></h1>
+
+				`t main_menu
+
+			</div>
+
+			$main_content()
+
+			<div id="ajax-indicator" style="display: none;">
+				<span>Loading...</span>
+			</div>
+
+			<div id="footer">
+				<div class="bgl">
+					<div class="bgr">2011 by KBase</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+`

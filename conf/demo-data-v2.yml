@@ -1,0 +1,76 @@
+# Test data
+
+# Customers.....
+users.User(user1):
+    email:  cojeel.demo@gmail.com
+    password: 111111
+    firstName: Charles
+    lastName: Pittman 
+    state: MA 
+       
+users.User(user2):
+    email:  cojeel.demo@gmail.com
+    password: 111111
+    firstName: Elliot
+    lastName: Nicola
+    state: CA    
+
+users.User(user3):
+    email: cojeel.demo@gmail.com
+    password: 111111
+    firstName: Mike
+    lastName: Bowling
+    state: MA
+
+users.User(user4):
+    email: cojeel.demo@gmail.com
+    password: 111111
+    firstName: Ben
+    lastName: Charny
+    state: MA                       
+
+# Knowledge
+knowledge.KFragment(k1):
+  title: Mongodb Quick Start
+  content: Some Content
+  comment: Some Comment
+  url: www.mongodb.org
+  type: PUBLIC
+  author: user1
+  created: 2011-06-14
+  tags:
+    - mongodb
+    
+knowledge.KFragment(k2):
+  title: Mongodb Ruby Driver
+  content: Some Content
+  comment: Some Comment
+  url: www.mongodb.org
+  type: PUBLIC
+  author: user2
+  created: 2011-11-14
+  tags:
+    - mongodb
+    
+knowledge.KFragment(k3):
+  title: How to configure a cluster of mongodbs
+  content: Some Content
+  comment: Some Comment
+  url: www.mongodb.org
+  type: PUBLIC
+  author: user3
+  created: 2011-07-21
+  tags:
+    - mongodb
+    
+knowledge.KFragment(k4):
+  title: How to use ruby string API
+  content: Some Content
+  comment: Some Comment
+  url: www.mongodb.org
+  type: PUBLIC
+  author: user4
+  created: 2011-08-21
+  tags:
+    - ruby
+

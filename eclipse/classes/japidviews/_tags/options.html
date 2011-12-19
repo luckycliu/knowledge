@@ -1,0 +1,5 @@
+`import java.util.Map.Entry;
+`args Map<String, String> options, String selectedValue
+`for (Entry<String, String> each : options.entrySet()) {
+<option value="$each.getKey()" `if(each.getKey().equals(selectedValue)){p("selected=\"selected\"");}`>$each.getValue()</option>
+`}
